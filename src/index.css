@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+:root {
+  --md-surface: #0e1016;
+  --md-surface-dim: #0a0b10;
+  --md-surface-container: #15181f;
+  --md-surface-container-high: #1c2029;
+  --md-surface-container-highest: #242833;
+  --md-outline: #33384a;
+  --md-outline-variant: #23273350;
+
+  --md-on-surface: #e4e6ef;
+  --md-on-surface-variant: #9aa0b4;
+
+  --md-primary: #6ee7ff;
+  --md-primary-dim: #37b8d9;
+  --md-on-primary: #04222b;
+  --md-secondary: #b9a6ff;
+
+  --md-error: #ff6e7f;
+  --md-warning: #ffcf6e;
+  --md-success: #7ef2b0;
+
+  --font-mono: ui-monospace, "SF Mono", "Cascadia Code", "JetBrains Mono", Menlo, Consolas, monospace;
+  --font-sans: -apple-system, "Segoe UI", Roboto, Inter, Helvetica, Arial, sans-serif;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  background: var(--md-surface-dim);
+  color: var(--md-on-surface);
+  font-family: var(--font-sans);
+  margin: 0;
+}
+
+.mono {
+  font-family: var(--font-mono);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--md-outline);
+  border-radius: 6px;
+}
+
+.cm-editor {
+  height: 100%;
+  font-size: 13.5px;
+}
+.cm-scroller {
+  font-family: var(--font-mono);
+}
+.cm-editor.cm-focused {
+  outline: none;
+}
